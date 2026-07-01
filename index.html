@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inauguración Küchen Moon</title>
+    <meta name="description" content="Te esperamos el viernes 10 a las 21:00 h en Parque Comercial Los Olivos, Cieza.">
+    <meta name="theme-color" content="#0d0a08">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Inauguración Küchen Moon">
+    <meta property="og:description" content="Viernes 10 a las 21:00 h · Parque Comercial Los Olivos, Cieza">
+    <meta property="og:image" content="assets/og-kuchen-moon.jpg">
+    <meta property="og:image:alt" content="Invitación a la inauguración de Küchen Moon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Inauguración Küchen Moon">
+    <meta name="twitter:description" content="Viernes 10 a las 21:00 h · Parque Comercial Los Olivos, Cieza">
+    <meta name="twitter:image" content="assets/og-kuchen-moon.jpg">
+
+    <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="14" fill="%230d0a08"/%3E%3Cpath d="M42 11a22 22 0 1 0 10 40 24 24 0 0 1-10-40Z" fill="%23d7bd82"/%3E%3Cpath d="M18 48h28" stroke="%23f5ead6" stroke-width="3" stroke-linecap="round"/%3E%3C/svg%3E'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#invitacion">Saltar a la invitación</a>
+
+    <audio id="eventAudio" preload="auto" data-src="assets/welcome-to-the-jungle.mp3"></audio>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Pausar música" hidden>
+      <span class="music-toggle__icon" id="musicIcon" aria-hidden="true">Ⅱ</span>
+      <span class="sr-only" id="musicText">Pausar música</span>
+    </button>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <header class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <p class="wordmark" aria-label="Küchen Moon">
+          <span>Küchen</span>
+          <span>Moon</span>
+        </p>
+
+        <div class="hero__copy" data-reveal>
+          <p class="eyebrow">Nueva tienda de cocinas en Cieza</p>
+          <h1 id="hero-title">Inauguración</h1>
+          <p class="hero__lead">Te invitamos a descubrir Küchen Moon</p>
+          <p class="hero__sublead">Una nueva forma de imaginar tu cocina llega a Cieza</p>
+
+          <dl class="hero__facts" aria-label="Datos principales del evento">
+            <div>
+              <dt>Fecha y hora</dt>
+              <dd>Viernes 10 · 21:00 h</dd>
+            </div>
+            <div>
+              <dt>Ubicación</dt>
+              <dd>Parque Comercial Los Olivos · Cieza</dd>
+            </div>
+          </dl>
+
+          <div class="hero__actions" aria-label="Acciones principales">
+            <button class="button button--primary" type="button" data-start-music>Ver invitación</button>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#invitacion" aria-label="Ir a la invitación">
+        <span aria-hidden="true"></span>
+      </a>
+    </header>
+
+    <main>
+      <section class="section intro" id="invitacion" aria-labelledby="intro-title">
+        <div class="container intro__grid">
+          <div class="intro__text" data-reveal>
+            <p class="section-kicker">Invitación</p>
+            <h2 id="intro-title">Una noche para abrir nuevas ideas</h2>
+            <p>
+              Nos encantará contar contigo en la inauguración de Küchen Moon, un nuevo espacio dedicado al diseño, la inspiración y las cocinas que transforman hogares.
+            </p>
+            <p>
+              Ven a brindar con nosotros y descubre nuestro showroom en una noche especial.
+            </p>
+          </div>
+
+          <div class="intro__note" data-reveal>
+            <p>Viernes</p>
+            <strong>10</strong>
+            <span>Julio · 2026</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="section-kicker">Showroom</p>
+            <h2 id="gallery-title">Cocinas para imaginar el próximo hogar</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card gallery-card--large" data-reveal>
+              <img src="assets/showroom-01.png" alt="Cocina clara con isla, grifo negro y barra de madera de Küchen Moon" loading="lazy">
+            </figure>
+            <figure class="gallery-card" data-reveal>
+              <img src="assets/showroom-02.png" alt="Zona de comedor integrada en una cocina moderna con sillas cálidas" loading="lazy">
+            </figure>
+            <figure class="gallery-card" data-reveal>
+              <img src="assets/showroom-03.png" alt="Cocina moderna con encimera oscura, iluminación lineal y estanterías abiertas" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section details" aria-labelledby="details-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="section-kicker">Detalles del evento</p>
+            <h2 id="details-title">Todo preparado para recibirte</h2>
+          </div>
+
+          <div class="detail-grid">
+            <article class="detail-card" data-reveal>
+              <span class="detail-card__label">Fecha</span>
+              <strong>Viernes 10 de julio de 2026</strong>
+            </article>
+            <article class="detail-card" data-reveal>
+              <span class="detail-card__label">Hora</span>
+              <strong>21:00 h</strong>
+            </article>
+            <article class="detail-card" data-reveal>
+              <span class="detail-card__label">Lugar</span>
+              <strong>Parque Comercial Los Olivos</strong>
+            </article>
+            <article class="detail-card" data-reveal>
+              <span class="detail-card__label">Ciudad</span>
+              <strong>Cieza</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section countdown-section" aria-labelledby="countdown-title">
+        <div class="container countdown-shell" data-reveal>
+          <div class="section-heading section-heading--center">
+            <p class="section-kicker">Cuenta atrás</p>
+            <h2 id="countdown-title">Falta poco para brindar</h2>
+          </div>
+
+          <div class="countdown" data-countdown aria-label="Cuenta atrás hasta la inauguración">
+            <div class="countdown__item">
+              <strong data-days>00</strong>
+              <span>Días</span>
+            </div>
+            <div class="countdown__item">
+              <strong data-hours>00</strong>
+              <span>Horas</span>
+            </div>
+            <div class="countdown__item">
+              <strong data-minutes>00</strong>
+              <span>Minutos</span>
+            </div>
+            <div class="countdown__item">
+              <strong data-seconds>00</strong>
+              <span>Segundos</span>
+            </div>
+          </div>
+
+          <p class="countdown-ended" data-countdown-ended hidden>La inauguración ya ha comenzado</p>
+        </div>
+      </section>
+
+      <section class="section visit" aria-labelledby="visit-title">
+        <div class="container visit__grid">
+          <div class="visit__copy" data-reveal>
+            <p class="section-kicker">Cómo llegar</p>
+            <h2 id="visit-title">Parque Comercial Los Olivos, Cieza</h2>
+            <p>
+              Te esperamos en el showroom de Küchen Moon para celebrar el inicio de este nuevo espacio de diseño de cocinas.
+            </p>
+          </div>
+
+          <div class="visit__actions" data-reveal>
+            <a class="button button--primary" href="https://www.google.com/maps/search/?api=1&amp;query=Parque%20Comercial%20Los%20Olivos%20Cieza" target="_blank" rel="noopener">Abrir en Google Maps</a>
+            <a class="button button--secondary" href="#confirmar">Confirmar asistencia</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rsvp" id="confirmar" aria-labelledby="rsvp-title">
+        <div class="container rsvp__grid">
+          <div data-reveal>
+            <p class="section-kicker">Confirmación de asistencia</p>
+            <h2 id="rsvp-title">Nos encantará saber que vienes</h2>
+            <p>
+              Confirma tu asistencia en el formulario del evento.
+            </p>
+          </div>
+
+          <div class="rsvp__panel" data-reveal>
+            <p>Formulario de asistencia para la inauguración de Küchen Moon el viernes 10 a las 21:00.</p>
+            <a class="button button--primary button--wide" href="#" data-rsvp-form>Confirmar asistencia</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="finale" aria-labelledby="final-title">
+      <div class="container finale__inner" data-reveal>
+        <p class="section-kicker">Küchen Moon · Cocinas que inspiran</p>
+        <h2 id="final-title">Te esperamos</h2>
+        <p>
+          Viernes 10 de julio de 2026 · 21:00 h<br>
+          Parque Comercial Los Olivos · Cieza
+        </p>
+        <div class="finale__actions">
+          <a class="button button--primary" href="#" data-rsvp-form>Confirmar asistencia</a>
+          <a class="button button--secondary" href="https://www.google.com/maps/search/?api=1&amp;query=Parque%20Comercial%20Los%20Olivos%20Cieza" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
